@@ -534,11 +534,11 @@ a { color: inherit; }
 /* ---------- Responsive ---------- */
 @media (max-width: 900px) {
   body { font-size: 14px; }
-  .hero { padding: 40px 16px 60px; }
+  .hero { padding: 16px 16px 60px; }
   .hero-inner { padding-left: 0; }
   .hero-vertical { display: none; }
-  .hero-logo { right: 8px; bottom: -28px; width: 120px; }
-  .hero-catch { margin-top: 40px; font-size: 20px; }
+  .hero-logo { right: 8px; bottom: -40px; width: 120px; }
+  .hero-catch { margin-top: 52px; font-size: 20px; }
 
   .container { padding: 0 16px; }
   .chapter { padding: 56px 0 72px; }
