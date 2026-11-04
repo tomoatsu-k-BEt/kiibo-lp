@@ -512,6 +512,7 @@ a { color: inherit; }
 }
 .store__date { margin-top: 8px; font-size: 14px; line-height: 2; color: var(--ink-60); }
 .sp-only { display: none; }
+.pc-only { display: inline; }
 .store .ec-btn--lg { margin-top: 36px; }
 
 /* ---------- Footer ---------- */
@@ -564,7 +565,7 @@ a { color: inherit; }
   .scene p { white-space: normal; }
 
   .colors { grid-template-columns: 1fr; row-gap: 40px; margin-top: 40px; padding-left: 0; }
-  .color { gap: 20px; }
+  .color { gap: 20px; padding-left: 16px; }
   .color img { width: 84px; }
   .color > div { flex: 1; width: auto; }
   .color__name { min-width: 0; margin-top: 10px; padding: 6px 18px; font-size: 14px; letter-spacing: 0.04em; }
@@ -594,6 +595,7 @@ a { color: inherit; }
   .store { padding: 64px 16px 72px; }
   .store__lead { font-size: 17px; }
   .sp-only { display: inline; }
+  .pc-only { display: none; }
   .ec-btn--lg { padding: 16px 32px; font-size: 15px; }
   .register { padding-top: 56px; padding-bottom: 72px; }
   .register__panel { padding: 26px 0 24px; }
