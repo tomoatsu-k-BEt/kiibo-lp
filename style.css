@@ -541,7 +541,7 @@ a { color: inherit; }
   .hero-catch { margin-top: 52px; font-size: 20px; }
 
   .container { padding: 0 16px; }
-  .chapter { padding: 56px 0 72px; }
+  .chapter { padding: 32px 0 72px; }
   .chapter-grid { grid-template-columns: 1fr; gap: 24px; }
   .chapter-label__num { font-size: 64px; }
   .chapter-head { padding-top: 0; }
@@ -556,7 +556,7 @@ a { color: inherit; }
   .photo-band__caption { font-size: 10px; letter-spacing: 0.2em; }
 
   .message { grid-template-columns: 1fr; gap: 32px; margin-left: 0; }
-  .message__photo img { width: 100%; max-width: 330px; }
+  .message__photo img { width: 100%; max-width: none; aspect-ratio: 1 / 1; object-position: center top; }
   .message__title { font-size: 26px; }
 
   .scenes { grid-template-columns: 1fr; margin-top: 40px; gap: 40px; }
