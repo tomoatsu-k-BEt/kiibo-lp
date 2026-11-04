@@ -192,6 +192,42 @@ a { color: inherit; }
 .photo-band--hands img { height: 560px; object-position: center 70%; }
 .photo-band--lineup img { height: 620px; object-position: center 50%; }
 
+/* 左寄せ（トリミングせずに写真全体を見せる） */
+.photo-band--offset {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  grid-template-columns: minmax(0, 72%) 1fr;
+  align-items: end;
+  padding-bottom: 72px;
+}
+.photo-band--offset::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  width: 46%;
+  height: 72%;
+  background: var(--dusty);
+  opacity: 0.55;
+}
+.photo-band--offset img { height: auto; }
+.photo-band--offset-right { grid-template-columns: 1fr minmax(0, 72%); }
+.photo-band--offset-right::before { right: auto; left: 0; }
+.photo-band--offset-right img { grid-column: 2; grid-row: 1; }
+.photo-band--offset-right .photo-band__caption { grid-column: 1; grid-row: 1; }
+.photo-band__caption {
+  justify-self: center;
+  margin-bottom: 8px;
+  writing-mode: vertical-rl;
+  font-family: var(--font-num);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.3em;
+  color: var(--dusty-deep);
+}
+
 /* ---------- CHAPTER 02 ---------- */
 .chapter--02 { padding-top: 100px; padding-bottom: 130px; }
 .message {
@@ -514,6 +550,10 @@ a { color: inherit; }
   .concept { padding: 0; font-size: 15px; }
   .photo-band--hands img { height: auto; }
   .photo-band--lineup img { height: auto; }
+  .photo-band--offset { grid-template-columns: minmax(0, 86%) 1fr; padding-bottom: 40px; }
+  .photo-band--offset::before { width: 50%; height: 70%; }
+  .photo-band--offset-right { grid-template-columns: 1fr minmax(0, 86%); }
+  .photo-band__caption { font-size: 10px; letter-spacing: 0.2em; }
 
   .message { grid-template-columns: 1fr; gap: 32px; margin-left: 0; }
   .message__photo img { width: 100%; max-width: 330px; }
